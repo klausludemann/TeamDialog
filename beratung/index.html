@@ -445,5 +445,30 @@ var complianz = {"prefix":"cmplz_","user_banner_id":"1","set_cookies":[],"block_
 <script type="text/javascript">	window.get = {};	window.get.captcha = function(enteredCaptcha) {
                   return jQuery.get(ajaxurl, { action : "mk_validate_captcha_input", captcha: enteredCaptcha });
               	};</script>
-	</body>
+	
+<style>
+/* Force testimonial slider arrows (inline to win specificity/order) */
+.mk-testimonial .flex-direction-nav a{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:70px !important;
+  height:70px !important;
+  border-radius:50% !important;
+  border:1px solid rgba(255,255,255,.35) !important;
+  background-color:rgba(0,0,0,.15) !important;
+  background-repeat:no-repeat !important;
+  background-position:center !important;
+  background-size:18px 22px !important;
+  opacity:0.6 !important;
+}
+.mk-testimonial .flex-direction-nav a{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 18 22\"%3E%3Cpath d=\"M12.5 3 L6 11 L12.5 19\" fill=\"none\" stroke=\"%23ffffff\" stroke-opacity=\"0.85\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/%3E%3C/svg%3E") !important;
+}
+.mk-testimonial .flex-direction-nav a.flex-next{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 18 22\"%3E%3Cpath d=\"M5.5 3 L12 11 L5.5 19\" fill=\"none\" stroke=\"%23ffffff\" stroke-opacity=\"0.85\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/%3E%3C/svg%3E") !important;
+}
+</style>
+
+</body>
 </html>
