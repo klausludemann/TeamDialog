@@ -1,0 +1,177 @@
+/* Minimal Complianz banner styles to prevent layout breakage in static builds */
+#cmplz-cookiebanner-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  max-width: 520px;
+  font-family: "Open Sans", Arial, sans-serif;
+  pointer-events: auto;
+}
+
+.cmplz-cookiebanner {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  padding: 16px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+  pointer-events: auto;
+}
+
+.cmplz-cookiebanner.cmplz-dismissed,
+.cmplz-hidden {
+  display: none !important;
+}
+
+.cmplz-cookiebanner * {
+  pointer-events: auto;
+}
+
+.cmplz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cmplz-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.cmplz-close {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cmplz-close svg {
+  width: 14px;
+  height: 14px;
+}
+
+.cmplz-divider {
+  border-top: 1px solid #e6e6e6;
+  margin: 10px 0;
+}
+
+.cmplz-body {
+  max-height: none;
+  overflow: visible;
+}
+
+.cmplz-information,
+.cmplz-documents,
+.cmplz-close {
+  display: none !important;
+}
+
+.cmplz-categories {
+  display: none;
+}
+
+.cmplz-cookiebanner.cmplz-categories-visible .cmplz-categories {
+  display: block;
+}
+
+.cmplz-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.cmplz-btn {
+  border: 1px solid #0e6875;
+  background: #0e6875;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 40px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.cmplz-btn.cmplz-deny,
+.cmplz-btn.cmplz-view-preferences,
+.cmplz-btn.cmplz-save-preferences,
+.cmplz-btn.cmplz-manage-options {
+  background: #fff;
+  color: #0e6875;
+}
+
+.cmplz-btn.cmplz-accept {
+  background: #0d7ca6;
+  border-color: #0d7ca6;
+  color: #fff;
+}
+
+.cmplz-btn.cmplz-deny {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+}
+
+.cmplz-btn.cmplz-view-preferences {
+  background: #fff;
+  border-color: #0d7ca6;
+  color: #0d7ca6;
+}
+
+.cmplz-btn.cmplz-manage-options {
+  display: none !important;
+}
+
+.cmplz-btn.cmplz-save-preferences {
+  display: none !important;
+}
+
+.cmplz-cookiebanner.cmplz-categories-visible .cmplz-btn.cmplz-save-preferences {
+  display: inline-flex !important;
+}
+
+.cmplz-cookiebanner.cmplz-categories-visible .cmplz-buttons {
+  flex-wrap: wrap;
+}
+
+.cmplz-btn.cmplz-view-preferences {
+  display: inline-flex !important;
+}
+
+.cmplz-links {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cmplz-links.cmplz-information {
+  display: none !important;
+}
+
+.cmplz-links a {
+  color: #0e6875;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  #cmplz-cookiebanner-container {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    max-width: none;
+  }
+  .cmplz-buttons {
+    flex-wrap: wrap;
+  }
+}
