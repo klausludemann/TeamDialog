@@ -64,11 +64,11 @@ body{}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{floa
     (function() {
       try {
         if (localStorage.getItem('insider_auth') !== '1') {
-          window.location.href = '/index.html';
+          window.location.href = '/TeamDialog/index.html';
         }
       } catch (e) {
         // If storage is blocked, fall back to login page.
-        window.location.href = '/index.html';
+        window.location.href = '/TeamDialog/index.html';
       }
     })();
     </script>
@@ -1020,7 +1020,7 @@ var complianz = {"prefix":"cmplz_","user_banner_id":"1","set_cookies":[],"block_
       btn.addEventListener('click', function(e) {
         if (e && e.preventDefault) e.preventDefault();
         try { localStorage.removeItem('insider_auth'); } catch (err) {}
-        window.location.href = '/index.html';
+        window.location.href = '/TeamDialog/index.html';
       });
     })();
     </script>
