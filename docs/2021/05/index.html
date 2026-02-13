@@ -57,7 +57,8 @@ body{}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{floa
 <link rel='stylesheet' id='mk-style-css' href='../../wp-content/themes/jupiter-child/styleb7d5.css?ver=6.1.9' type='text/css' media='all' />
 <script type='text/javascript' src='../../wp-includes/js/jquery/jquery.mina7a0.js?ver=3.6.1' id='jquery-core-js'></script>
 <script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
-<style>.cmplz-hidden{display:none!important;}</style><meta itemprop="author" content="Horst Pütz" /><meta itemprop="datePublished" content="14. Mai 2021" /><meta itemprop="dateModified" content="2. Juli 2021" /><meta itemprop="publisher" content="Team Dialog" /><script> var isTest = false; </script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	</head>
+<style>.cmplz-hidden{display:none!important;}</style><meta itemprop="author" content="Horst Pütz" /><meta itemprop="datePublished" content="14. Mai 2021" /><meta itemprop="dateModified" content="2. Juli 2021" /><meta itemprop="publisher" content="Team Dialog" /><script> var isTest = false; </script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	<style>.cmplz-cookiebanner{display:none !important;}</style>
+</head>
 
 <body data-rsssl=1 data-cmplz=1 class="archive date wpb-js-composer js-comp-ver-6.10.0 vc_responsive" itemscope="itemscope" itemtype="https://schema.org/WebPage"  data-adminbar="">
 <!-- Google Tag Manager (noscript) -->
@@ -505,6 +506,76 @@ var complianz = {"prefix":"cmplz_","user_banner_id":"1","set_cookies":[],"block_
 .mk-testimonial .flex-direction-nav a.flex-next{ background-image:url("data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 18 22\"%3E%3Cpath d=\"M5.5 3 L12 11 L5.5 19\" fill=\"none\" stroke=\"%23ffffff\" stroke-opacity=\"0.85\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/%3E%3C/svg%3E") !important;
 }
 </style>
+
+
+<!-- Cookie Consent with Google Consent Mode v2 -->
+<style>
+.cookie-consent{position:fixed;bottom:0;left:0;right:0;background:#2c3e50;color:#fff;padding:20px;z-index:99999;box-shadow:0 -2px 10px rgba(0,0,0,0.2);display:none;}
+.cookie-consent.show{display:block;}
+.cookie-content{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+.cookie-text{flex:1;min-width:300px;}
+.cookie-text h3{margin:0 0 8px;font-size:18px;font-weight:600;}
+.cookie-text p{margin:0;font-size:14px;line-height:1.5;opacity:0.9;}
+.cookie-buttons{display:flex;gap:10px;flex-wrap:wrap;}
+.cookie-btn{padding:12px 24px;border:none;border-radius:4px;cursor:pointer;font-size:14px;font-weight:600;transition:all 0.3s;}
+.cookie-accept{background:#27ae60;color:#fff;}
+.cookie-accept:hover{background:#229954;}
+.cookie-decline{background:#95a5a6;color:#fff;}
+.cookie-decline:hover{background:#7f8c8d;}
+.cookie-settings{background:transparent;color:#fff;border:1px solid #fff;}
+.cookie-settings:hover{background:rgba(255,255,255,0.1);}
+@media(max-width:768px){.cookie-content{flex-direction:column;text-align:center;}.cookie-buttons{justify-content:center;width:100%;}}
+</style>
+<div class="cookie-consent" id="cookieConsent">
+<div class="cookie-content">
+<div class="cookie-text">
+<h3>🍪 Diese Website verwendet Cookies</h3>
+<p>Wir verwenden Cookies und Analysedienste, um Ihre Erfahrung zu verbessern. <a href="datenschutz/" style="color:#3498db;text-decoration:underline;">Datenschutzerklärung</a></p>
+</div>
+<div class="cookie-buttons">
+<button class="cookie-btn cookie-accept" onclick="acceptAllCookies()">Alle akzeptieren</button>
+<button class="cookie-btn cookie-decline" onclick="declineAllCookies()">Nur notwendige</button>
+<button class="cookie-btn cookie-settings" onclick="window.location.href='cookie-richtlinie-eu/'">Einstellungen</button>
+</div>
+</div>
+</div>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'wait_for_update': 500
+});
+function acceptAllCookies() {
+  gtag('consent', 'update', {
+    'analytics_storage': 'granted',
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted'
+  });
+  localStorage.setItem('cookieConsent', 'accepted');
+  document.getElementById('cookieConsent').classList.remove('show');
+}
+function declineAllCookies() {
+  gtag('consent', 'update', {
+    'analytics_storage': 'denied',
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
+  localStorage.setItem('cookieConsent', 'declined');
+  document.getElementById('cookieConsent').classList.remove('show');
+}
+if (!localStorage.getItem('cookieConsent')) {
+  document.getElementById('cookieConsent').classList.add('show');
+} else if (localStorage.getItem('cookieConsent') === 'accepted') {
+  acceptAllCookies();
+}
+</script>
+<!-- End Cookie Consent -->
 
 </body>
 
