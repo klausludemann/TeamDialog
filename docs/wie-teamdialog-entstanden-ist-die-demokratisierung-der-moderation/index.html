@@ -528,7 +528,9 @@ function acceptAllCookies() {
     'ad_personalization': 'granted'
   });
   localStorage.setItem('cookieConsent', 'accepted');
-  document.getElementById('cookieConsent').classList.remove('show');
+  var banner = document.getElementById('cookieConsent');
+  banner.classList.remove('show');
+  banner.style.display = 'none';
 }
 function declineAllCookies() {
   gtag('consent', 'update', {
@@ -538,7 +540,9 @@ function declineAllCookies() {
     'ad_personalization': 'denied'
   });
   localStorage.setItem('cookieConsent', 'declined');
-  document.getElementById('cookieConsent').classList.remove('show');
+  var banner = document.getElementById('cookieConsent');
+  banner.classList.remove('show');
+  banner.style.display = 'none';
 }
 if (!localStorage.getItem('cookieConsent')) {
   document.getElementById('cookieConsent').classList.add('show');
